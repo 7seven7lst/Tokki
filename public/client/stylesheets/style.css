@@ -217,6 +217,7 @@ tr:hover td {
   margin-right: 35px;
 }
 
+
 /********************************/
 /*SESSION HISTORY VIEW STYLES*/
 /********************************/
@@ -234,3 +235,10 @@ tr:hover td {
   margin-top: 10px;
   color: #355065;
 }
+
+
+.grayOut {
+  background-color: #999999;
+}
+
+
