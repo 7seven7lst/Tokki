@@ -15,10 +15,7 @@
 
 
 <div id="question-header" ng-repeat="prompt in questionLists" ng-model="questionLists">
-  <form  ng-submit=" submitQuestion()">
-    <div>{{prompt.question}}</div>
-    <input id="question-submit" type="submit" value="Submit" hidefocus="true" ng-disabled=" selectedList.length < 1"/>
-  </form>
+    <div ng-click="submitQuestion(prompt)" ng-class ="{'show': prompt.clicked === false, 'grayOut': prompt.clicked === true}">{{prompt.question}}</div> <div width="200px" ng-show="prompt.clicked">{{prompt.average}} %</div>
 </div>
 
 

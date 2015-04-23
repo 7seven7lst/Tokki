@@ -178,3 +178,8 @@ h3 {
 #question-submit {
   width: 100px;
 }
+
+
+.grayOut {
+  background-color: #999999;
+}
