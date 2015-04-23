@@ -198,3 +198,9 @@ h3 {
 #correctAnswer {
   margin-right: 35px;
 }
+
+
+.grayOut {
+  background-color: #999999;
+}
+
