@@ -72,16 +72,17 @@ angular.module('tokki')
     });
   }
 
-  var listenForQuestion = function (cb) {
+  var listenForAnswer = function (cb) {
     session.socket.on('answer', function(answer){
       cb(answer);
-    };
+    });
   }
 
   return {
     startSession: startSession,
     listen: listen,
     emitQuestion: emitQuestion,
+    listenForAnswer: listenForAnswer,
     endSession: endSession,
     upTime: upTime,
     postQuestion: postQuestion
