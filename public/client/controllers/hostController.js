@@ -67,17 +67,19 @@ angular.module('tokki')
 
     prompt.clicked = true;
 
-
+    
     socket.on('studentAnswer', function(answer){
       console.log("listening to student's response");
        //cb(answer, prompt);
        console.log($scope.answer[prompt.index]);
     }); 
 
+
     //listenForAnswer($scope.checkUserAnswers, prompt);
     
   }
 
+  
   
 
 

@@ -16,7 +16,7 @@
       $('#messages').append($('<li>').text(msg));
     });
     socket.on('studentAnswer', function(msg){
-      $('#messages').append($('<li>').text('hahah'));
+      $('#messages').append($('<li>').text('studentAnswer '+msg));
     });
   });
   </script>
